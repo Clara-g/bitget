@@ -1,0 +1,505 @@
+:root{
+    font-size: 15px; /*1rem*/
+    font-family: "Corbel", "regular", sans-serif;
+}
+
+body{
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    background: transparent linear-gradient(180deg, #1A1C24, #0A0B0E) ;
+    opacity: 1;  
+}
+body > header{
+    width: 100%;
+} 
+
+body > header > img{
+    display: block;
+    margin: auto;
+    width: 35%;
+} 
+
+body > main{
+ display: block;
+ margin: auto;   
+} 
+
+/*---GENESIS---*/
+body > main > article[name="genesis"]{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 145px; 
+    top: 40px;
+    margin: auto;   
+}
+
+body > main > article[name="genesis"] > p{
+    width: 100%;
+    margin: auto;
+    font-family: "Corbel", "regular", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 350;
+    text-align: center;
+    color: #ffffff;    
+}
+
+body > main > article[name="genesis"] > p:nth-of-type(2){
+    width: 100%;
+}
+body > main > article[name="genesis"] > p:last-of-type{
+    width: 60%;
+}
+
+/*---PRESENTATION---*/
+body > main > article[name="presentation"]{
+   position: relative;
+   width: 100%;
+   margin: 40px 0 0 0;
+}
+
+body > main > article[name="presentation"] > video{
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    z-index: 0;
+    outline: none;
+}
+
+body > main > article[name="presentation"] > div{
+    height: auto;
+    margin: auto;
+    display: block;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 17%; 
+    z-index: 5; 
+}
+.play{
+    display: block;
+    margin: auto;
+    max-width: 10vw;  
+}
+
+body > main > article[name="presentation"] > img[name="crypto"]{
+    display: block;
+    width: 40%;
+    margin: auto;  
+}
+
+/*---DOWNLOAD---*/
+body > main > article[name="download"] {
+    width: 100%;
+    margin: 10px 0 0 0;
+} 
+
+/*---DOWNLOAD > CTA---*/    
+body > main > article[name="download"] > section[name="cta"]{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 25px 0 0 0;
+}   
+
+
+body > main > article[name="download"] > section[name="cta"] > a > img{
+height: 65px;
+margin: 0px 10px auto;
+}
+
+body > main > article[name="download"] > section[name="cta"] > a:nth-of-type(2) > img{
+    filter: brightness(0.5);
+}
+
+/*---DOWNLOAD > INSTRUCTION---*/
+body > main > article[name="download"] > section[name="instruction"]{
+    width: 100%;
+    display: block;
+    margin: 60px auto;
+}
+
+body > main > article[name="download"] > section[name="instruction"] > ol {
+    margin: auto;
+    counter-reset: instruction;
+    padding-left: 2rem;
+    list-style-image: url();
+}
+
+body > main > article[name="download"] > section[name="instruction"] > ol > li{
+    width: 66%;
+    margin: auto;
+    font-family: "Corbel", "regular", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 350;
+    line-height: 2;
+    color: #ffffff; 
+	list-style-type: none;
+	counter-increment: instruction; 
+}
+
+li:before {
+    content: counter(instruction);
+    padding: 1px 6px;
+    margin-right: 10px;
+    background: white;
+    -moz-border-radius: 60px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: black;		
+}
+
+li:nth-of-type(2)::before {
+    margin-right: 5px;
+}
+
+/*---MOCKUP---*/
+body > main > article[name="mockup"] {
+    width: 100%;
+    display: block;
+    margin-top: -10px;
+}
+
+body > main > article[name="mockup"] > img {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+/*---NOTE & CONTACT---*/
+/*---NOTE & CONTACT > NOTE---*/
+body > main > article[name="information"] {
+    width: 100%;
+    display: flex;
+    margin: 70px 0 60px auto;
+}
+
+body > main > article[name="information"] > section[name="note"] {
+    width: 100%;
+    display: block; 
+}
+
+body > main > article[name="information"] > section[name="note"] > p {
+    width:100%;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #ffffff;  
+}
+
+/*---NOTE & CONTACT > CONTACT---*/    
+body > main > article[name="information"] > section[name="contact"] {
+    width: 100%;
+    display: block;  
+}
+
+body > main > article[name="information"] > section[name="contact"] > a {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: auto 0;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*---FOOTER---*/
+body > footer{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height: 30px;
+  background-color:white;
+}
+
+body > footer > a{
+    width: 100%;
+    font-size:  1rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*------------------------------------RESPONSIVE LARGE EXTRA DESKTOP------------------------------------*/
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) { 
+
+/*---GENESIS---*/
+    body > main > article[name="genesis"] > p:nth-of-type(2){
+        width: 45%;
+    }
+
+    body > main > article[name="genesis"] > p:last-of-type{
+        width: 65%;
+    }
+/*---PRESENTATION > VIDEO---*/
+ 
+/*---DOWNLOAD > CTA---*/      
+    body > main > article[name="download"] > section[name="cta"] > a > img{
+        height: 50px;  
+    } 
+
+}
+/*------------------------------------RESPONSIVE LARGE DESKTOP------------------------------------*/
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) { 
+/*---GENESIS---*/
+    body > main > article[name="genesis"] > p:nth-of-type(2) {
+        width: 50%;
+    }
+    body > main > article[name="genesis"] > p:last-of-type{
+        width: 80%;
+    }
+/*---PRESENTATION > VIDEO---*/
+    body > main > article[name="presentation"] > video{
+        padding-bottom: 10px;
+        }
+    body > main > article[name="presentation"] > img[name="crypto"] {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+}
+
+/*------------------------------------RESPONSIVE MEDIUM DESKTOP------------------------------------*/
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+/*---GENESIS---*/
+    body > main > article[name="genesis"] > p{
+        font-size: 1rem;
+        }
+    body > main > article[name="genesis"] > p:nth-of-type(2) {
+        width:55%;
+        }
+    body > main > article[name="genesis"] > p:last-of-type{
+            width: 75%;
+        }
+/*---VIDEO PRESENTATION---*/
+    body > main > article[name="presentation"] > video {
+        width: 60%;
+    }   
+    
+    /*body > main > article[name="presentation"] > div{
+        display: none;
+    }*/
+
+   
+/*---DOWNLOAD > CTA---*/      
+    body > main > article[name="download"] > section[name="cta"] > a > img{
+        height: 40px;  
+    }
+
+/*---MOCKUP---*/
+    body > main > article[name="mockup"] > img {  
+        width: 40%;  
+    }
+/*---NOTE & CONTACT---*/  
+    body > main > article[name="information"] {  
+        display: block;
+       
+    }
+    body > main > article[name="information"] > section {
+        margin: 30px 0 0 0 ;
+    }
+}
+
+/*------------------------------------RESPONSIVE LANDSCAPE PHONES------------------------------------*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+/*---GENESIS---*/
+    body > main > article[name="genesis"] > p{
+    font-size: 1rem;
+    }
+    body > main > article[name="genesis"] > p:nth-of-type(2) {
+    width: 70%;
+    }
+    body > main > article[name="genesis"] > p:last-of-type{
+    width: 70%;
+    }
+/*---VIDEO PRESENTATION---*/
+    body > main > article[name="presentation"] > video {
+        width: 70%;
+    }  
+/*---PRESENTATION > VIDEO---*/
+      
+/*---LOGO ALL CRYPTOMONEY---*/
+    body > main > article[name="presentation"] > img[name="crypto"] {
+    width: 60%;
+    }
+/*---INSTRUCTION OF INSTALLATION---*/
+    body > main > article[name="download"] > section[name="instruction"] > ol {
+        padding: 0;
+    }
+    body > main > article[name="download"] > section[name="instruction"] > ol > li {
+        width: 80%;
+        font-size: 1rem;
+    }
+/*---MOCKUP---*/
+    body > main > article[name="mockup"] > img {  
+        width: 50%;  
+    }
+
+}
+
+/*------------------------------------RESPONSIVE MOBILE------------------------------------*/
+@media all and (max-device-width: 480px){
+    body > header{
+        width: 100%;
+    } 
+    body > header > img{
+        display: block;
+        margin: auto;
+        width: 80%;
+    } 
+    body > main{
+     display: block;
+     margin: auto;   
+    } 
+
+/*---GENESIS---*/
+    body > main > article[name="genesis"]{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 175px; 
+        top: 40px;
+        margin: auto;   
+    }
+
+    body > main > article[name="genesis"] > p{
+        width: 80%;
+        font-family: "Corbel", "regular", sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #ffffff; 
+        margin: auto;
+    }
+
+    body > main > article[name="genesis"] > p:last-of-type {
+        width: 80%;
+    }
+
+/*---PRESENTATION---*/
+    body > main > article[name="presentation"]{
+       width: 100%;
+    }
+
+    body > main > article[name="presentation"] > video{
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+
+
+
+    body > main > article[name="presentation"] > img{
+        display: block;
+        width: 80%;
+        margin: 40px auto;
+        
+    }
+/*---PRESENTATION > VIDEO---*/
+
+    body > main > article[name="presentation"]> img[name="crypto"] {
+        width: 80%;
+        padding-top: 15px;
+    }
+
+/*---DOWNLOAD---*/
+    body > main > article[name="download"] {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }  
+/*---DOWNLOAD > CTA---*/    
+    body > main > article[name="download"] > section[name="cta"]{
+    display: block;
+    }   
+    body > main > article[name="download"] > section[name="cta"] > a > img{
+    display: block;
+    width: 45%;
+    height: 65px;
+    margin: 5px auto;
+    }
+/*---DOWNLOAD > INSTRUCTION---*/
+    body > main > article[name="download"] > section[name="instruction"]{
+        width: 100%;
+        display: block;
+        margin: 60px auto;
+    }
+    body > main > article[name="download"] > section[name="instruction"] > ol {
+        list-style-image: url();
+    }
+    body > main > article[name="download"] > section[name="instruction"] > ol > li{
+        width: 100%;
+        font-family: "Corbel", "regular", sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #ffffff; 
+        margin: auto;
+    }
+
+/*---MOCKUP---*/
+    body > main > article[name="mockup"] {
+        width: 100%;
+        display: block;
+    }
+    body > main > article[name="mockup"] > img {
+        width: 75%;
+        display: block;
+        margin: auto;
+    }
+
+/*---NOTE & CONTACT---*/
+/*---NOTE & CONTACT > NOTE---*/
+    body > main > article[name="information"] {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    body > main > article[name="information"] > section[name="note"] {
+        width: 100%;
+        display: block;
+        margin: 40px auto;
+    }
+    body > main > article[name="information"] > section[name="note"] > p {
+        width:70%;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 0.8rem;
+        text-align: center;
+        color: #ffffff; 
+    }
+
+/*---NOTE & CONTACT > CONTACT---*/    
+    body > main > article[name="information"] > section[name="contact"] {
+        width: 100%;
+        display: block;
+        margin: 40px auto;
+    }
+    
+    body > main > article[name="information"] > section[name="contact"] > a {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: auto 0;
+        font-size: 0.8rem;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+}
+
+
+
